@@ -12,21 +12,20 @@
             height: auto;
         }
 
-       
+        #wrap {
+            width: 30%;
+            margin: 0 auto;
+            /* text-align: right; */
+        }
 
         h1{
             text-align: center;
         }
 
-        input {
-            width: 45px;
-            height: 45px;
-        }
+        
 
         .calculator{
             display: inline-flex; 
-            vertical-align: middle;
-            width: 50%;
             margin: 0 auto;
         }
 
@@ -35,23 +34,31 @@
             color:#9c9c9c;
         }
 
-        #restart {
-            display: block;
-            text-align: center;
+        #restart input {
+            font-size: 40px;
         }
 
         .calculator {
-            margin-bottom: 10px;
-
+            margin-bottom: 20px;
+            height: 30px;
         }
+
+        .calculator input {
+            width: 30px;
+        }
+
+        /* .calculator p {
+            vertical-align: middle;
+        } */
 
         #result_button1,#result_button2,#result_button3,#result_button4 {
             margin-left: 10px;
         }
 
-        /* #wrap {
-            margin: 0 auto;
-        } */
+        #result_bottom {
+            text-align: center;
+        }
+        
 
 
     </style>
@@ -71,7 +78,6 @@
                 <p>　=　</p>
                 <input type="text" id="answer1">
                 <button onclick="result();" type="button" id="result_button1">Result</button>
-                <p id="result1"></p>
             </div>
 
             <!-- subtraction -->
@@ -83,7 +89,6 @@
                 <p>　=　</p>
                 <input type="text" id="answer2">
                 <button onclick="result2();" type="button" id="result_button2">Result</button>
-                <p id="result2"></p>
             </div>
 
             <!-- miltiplication -->
@@ -95,7 +100,6 @@
                 <p>　=　</p>
                 <input type="text" id="answer3">
                 <button onclick="result3();" type="button" id="result_button3">Result</button>
-                <p id="result3"></p>
             </div>
 
             <!-- divition -->
@@ -107,11 +111,17 @@
                 <p>　=　</p>
                 <input type="text" id="answer4">
                 <button onclick="result4();" type="button" id="result_button4">Result</button>
+            </div>
+
+            <div id="result_bottom">
+                <p id="result1"></p>
+                <p id="result2"></p>
+                <p id="result3"></p>
                 <p id="result4"></p>
             </div>
 
             <div id= "restart">
-                <input type="reset" value="Restart" onclick="restart()">
+                <input type="reset" value="Restart" onclick="restart()" id="restart_text" style="width:80px;">
             </div>
         </div>
 
@@ -140,7 +150,7 @@
         }
         
         if (btn2.classList.contains('btn_disabled')) {
-            btn3.classList.remove('btn_disabled');
+            btn2.classList.remove('btn_disabled');
         }
 
         if (btn3.classList.contains('btn_disabled')) {
