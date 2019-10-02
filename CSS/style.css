@@ -28,15 +28,16 @@ h1 {
 }
 
 h2 {
+    font-size: 2.5em;
     color: gray;
     font-family: 'Sigmar One', cursive;
     line-height: 0.7;
 }
 
 h3 {
-    line-height: 5px;
     color:gray;
     font-family: 'Sigmar One', cursive;
+    line-height: 5px;
 }
 
 p {
@@ -45,6 +46,9 @@ p {
     font-family: 'Sigmar One', cursive;
 }
 
+#games{
+    line-height: 90px;
+}
 
 .toy-button {
     position: relative;
@@ -64,12 +68,4 @@ p {
     text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
   }
 
-  a {
-    text-decoration: none;
-    display: inline-block;
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px
-}
+  
