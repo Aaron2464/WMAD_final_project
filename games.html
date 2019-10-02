@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Sigmar+One&display=swap" rel="stylesheet">
     <title>Games</title>
-    <style>
-        a {
-            text-decoration: none;
-            display: inline-block;
-            background-color: black;
-            color: white;
-            border: 1px solid white;
-            border-radius: 5px;
-            padding: 5px
-        }
-    </style>
     <script src="js/game4.js"></script>
 </head>
+
 <body>
 
     <nav>
-        <a href="game2.html">Prime Numbers</a>
-        <a href="game3.html">Calculator</a>
-        <a href="game4.html">Lottery</a>
+        <a href="game2.html" class="toy-button" onclick="PrimNumbers">Prime Numbers</a>
+        <a href="game3.html" class="toy-button" onclick="Calculator">Calculator</a>
+        <a href="game4.html" class="toy-button" onclick="Lottery">Lottery</a>
     </nav>
 
-    <h1 id="games"></h1>
+    <h id="games"></h1>
 
     <script>
         var games = document.getElementById('games');
         games.innerHTML = "Hello " + sessionStorage.getItem("username") + "! You can play any game you want!";
+        
     </script>
 </body>
+
 </html>
