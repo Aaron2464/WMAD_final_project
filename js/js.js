@@ -1,7 +1,7 @@
 //Index JS
 var username = document.getElementById('username');
 
-function login(){
+function login() {
     sessionStorage.setItem("username", username.value);
     window.location.href = "games.html"
 }
@@ -16,43 +16,37 @@ game2.innerHTML = "Hello " + sessionStorage.getItem("username") + "! This is gam
 
 var primeNumber = document.getElementById("primeNumber");
 
-primeNumber.onkeyup = ()=>{
+primeNumber.onkeyup = () => {
 
-    if(primeNumber.value < 0){
+    if (primeNumber.value < 0) {
         result.innerHTML = "Number must not be negative";
-    }else if(!primeNumber.value){
-        result.innerHTML= "";
-    }else if((prime_number(primeNumber.value) == false)){
-        result.innerHTML= "Not a prime number";
-    }else if(prime_number(primeNumber.value) == true){
-        result.innerHTML= "Prime number";
+    } else if (!primeNumber.value) {
+        result.innerHTML = "";
+    } else if ((prime_number(primeNumber.value) == false)) {
+        result.innerHTML = "Not a prime number";
+    } else if (prime_number(primeNumber.value) == true) {
+        result.innerHTML = "Prime number";
     }
 }
 
-function prime_number(n){
+function prime_number(n) {
 
-        if (n < 2)
-        {
-            return false;
-        }
-        else if(n === 2)
-        {
-            return true;
-        }else if(isNaN(n))
-        {
-            return false;
-        }
-        else
-        {
-            for(var x = 2; x < n; x++)
-            {
-            if(n % x === 0)
-            {
+    if (n < 2) {
+        return false;
+    }
+    else if (n === 2) {
+        return true;
+    } else if (isNaN(n)) {
+        return false;
+    }
+    else {
+        for (var x = 2; x < n; x++) {
+            if (n % x === 0) {
                 return false;
             }
-            }
-            return true;  
         }
-        }
+        return true;
+    }
+}
 
 prime_number(primeNumber.value);
