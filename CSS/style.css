@@ -84,6 +84,12 @@ p {
     font-size:30px;
 }
 
+.num_restart {
+    width: 70px;
+    height: 45px;
+    font-size:20px;
+}
+
 .btn_disabled {
     background-color: #bbbbbb;
     color:#969696;
