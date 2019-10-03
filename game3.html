@@ -4,117 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-
-        body {
-            width: 100%;
-            height: auto;
-        }
-
-       
-
-        h1{
-            text-align: center;
-        }
-
-        input {
-            width: 45px;
-            height: 45px;
-        }
-
-        .calculator{
-            display: inline-flex; 
-            vertical-align: middle;
-            width: 50%;
-            margin: 0 auto;
-        }
-
-        .btn_disabled {
-            background-color: #bbbbbb;
-            color:#9c9c9c;
-        }
-
-        #restart {
-            display: block;
-            text-align: center;
-        }
-
-        .calculator {
-            margin-bottom: 10px;
-
-        }
-
-        #result_button1,#result_button2,#result_button3,#result_button4 {
-            margin-left: 10px;
-        }
-
-        /* #wrap {
-            margin: 0 auto;
-        } */
-
-
-    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy%7CSigmar+One&display=swap" rel="stylesheet">
+    <title>calculator challenge</title>
+    
 </head>
+
 <body>
     <form>
 
-        <h1>calculator challenge</h1>
+        <h2>calculator challenge</h2>
 
         <div id = "wrap">
             <!-- adition -->
             <div class="calculator">
-                <p id="adition">adition　</p>
-                <input type="text" id="num1">
-                <p>　+　</p>
-                <input type="text" id="num2">
-                <p>　=　</p>
-                <input type="text" id="answer1">
-                <button onclick="result();" type="button" id="result_button1">Result</button>
-                <p id="result1"></p>
+                <h3 id="adition">Addition</h3>
+                <div class="calc_box">
+                    <input class="num_box" type="text" id="num1">
+                    <p class="mark">+</p>
+                    <input class="num_box" type="text" id="num2">
+                    <p class="mark">=</p>
+                    <input class="num_box" type="text" id="answer1">
+                    <button onclick="result();" type="button" id="result_button1">Result</button>
+                </div>
             </div>
 
             <!-- subtraction -->
             <div class="calculator">
-                <p id="subtraction">subtraction　</p>
-                <input type="text" id="num3">
-                <p>　-　</p>
-                <input type="text" id="num4">
-                <p>　=　</p>
-                <input type="text" id="answer2">
-                <button onclick="result2();" type="button" id="result_button2">Result</button>
-                <p id="result2"></p>
+                <h3 id="subtraction">Subtraction</h3>
+                <div class="calc_box">
+                    <input class="num_box" type="text" id="num3">
+                    <p class="mark">-</p>
+                    <input class="num_box" type="text" id="num4">
+                    <p class="mark">=</p>
+                    <input class="num_box" type="text" id="answer2">
+                    <button onclick="result2();" type="button" id="result_button2">Result</button>
+                </div>
             </div>
 
             <!-- miltiplication -->
             <div class="calculator">
-                <p id="miltiplication">miltiplication　</p>
-                <input type="text" id="num5">
-                <p>　×　</p>
-                <input type="text" id="num6">
-                <p>　=　</p>
-                <input type="text" id="answer3">
-                <button onclick="result3();" type="button" id="result_button3">Result</button>
-                <p id="result3"></p>
+                <h3 id="miltih3lication">Multiplication</h3>
+                <div class="calc_box">
+                    <input class="num_box" type="text" id="num5">
+                    <p class="mark">×</p>
+                    <input class="num_box" type="text" id="num6">
+                    <p class="mark">=</p>
+                    <input class="num_box" type="text" id="answer3">
+                    <button onclick="result3();" type="button" id="result_button3">Result</button>
+                </div>
             </div>
 
             <!-- divition -->
             <div class="calculator">
-                <p id="divition">divition　</p>
-                <input type="text" id="num7">
-                <p>　÷　</p>
-                <input type="text" id="num8">
-                <p>　=　</p>
-                <input type="text" id="answer4">
-                <button onclick="result4();" type="button" id="result_button4">Result</button>
+                <h3 id="divition">Division</h3>
+                <div class="calc_box">
+                    <input class="num_box" type="text" id="num7">
+                    <p class="mark">÷</p>
+                    <input class="num_box" type="text" id="num8">
+                    <p class="mark">=</p>
+                    <input class="num_box" type="text" id="answer4">
+                    <button onclick="result4();" type="button" id="result_button4">Result</button>
+                </div>
+            </div>
+
+            <div id="calc_answer">
+                <p id="result1"></p>
+                <p id="result2"></p>
+                <p id="result3"></p>
                 <p id="result4"></p>
             </div>
 
-            <div id= "restart">
-                <input type="reset" value="Restart" onclick="restart()">
+            <div class="restart">
+                <input class="num_box" type="reset" value="Restart" onclick="restart()" style="width:60px;">
             </div>
-        </div>
 
+        </div>
     </form>
 
     
@@ -135,21 +100,7 @@
         document.getElementById('result3').innerHTML = '';
         document.getElementById('result4').innerHTML = '';
 
-        if (btn1.classList.contains('btn_disabled')) {
-            btn1.classList.remove('btn_disabled');
-        }
-        
-        if (btn2.classList.contains('btn_disabled')) {
-            btn3.classList.remove('btn_disabled');
-        }
-
-        if (btn3.classList.contains('btn_disabled')) {
-            btn3.classList.remove('btn_disabled');
-        }
-
-        if (btn4.classList.contains('btn_disabled')) {
-            btn4.classList.remove('btn_disabled');
-        }
+    
     }
 
 
@@ -166,8 +117,9 @@
 
         let btn1 = document.getElementById('result_button1');
 
-
         let adition = num1 + num2;
+
+        btn1.classList.add('btn_disabled');
        
         if (isNaN(num1) || isNaN(num2))
         return;
@@ -179,13 +131,6 @@
             document.getElementById('result1').innerHTML = 'You are wrong, work harder. Correct answer is ' + adition;
         }
 
-
-        if (btn1.classList.contains('btn_disabled')) {
-            btn1.classList.add('btn_disabled');
-
-        } else {
-            btn1.classList.add('btn_disabled');
-        }
     }
 
 
@@ -212,13 +157,7 @@
         } else {
             document.getElementById('result2').innerHTML = 'You are wrong, work harder. Correct answer is ' + subtraction;
         }
-
-        if (btn2.classList.contains('btn_disabled')) {
-            btn2.classList.add('btn_disabled');
-
-        } else {
-            btn2.classList.add('btn_disabled');
-        }
+        
     }
 
     //====================
@@ -244,13 +183,7 @@
         } else {
             document.getElementById('result3').innerHTML = 'You are wrong, work harder. Correct answer is ' + subtraction;
         }
-
-        if (btn3.classList.contains('btn_disabled')) {
-            btn3.classList.add('btn_disabled');
-
-        } else {
-            btn3.classList.add('btn_disabled');
-        }
+        
     }
 
     //
@@ -274,124 +207,8 @@
         } else {
             document.getElementById('result4').innerHTML = 'You are wrong, work harder. Correct answer is ' + subtraction;
         }
-
-        if (btn4.classList.contains('btn_disabled')) {
-            btn4.classList.add('btn_disabled');
-
-        } else {
-            btn4.classList.add('btn_disabled');
-        }
+        
     }
-
-
-    
-
-
-        
-//         function result(){
-
-//         let num1 = parseInt(document.getElementById('num1').value);
-//         let num2 = parseInt(document.getElementById('num2').value);
-//         let num3 = parseInt(document.getElementById('num3').value);
-//         let num4 = parseInt(document.getElementById('num4').value);
-//         let num5 = parseInt(document.getElementById('num5').value);
-//         let num6 = parseInt(document.getElementById('num6').value);
-//         let num7 = parseInt(document.getElementById('num7').value);
-//         let num8 = parseInt(document.getElementById('num8').value);
-
-//         let answer = parseInt(document.getElementsById('answer1').value);
-//         let answer = parseInt(document.getElementsById('answer2').value);
-//         let answer = parseInt(document.getElementsById('answer3').value);
-//         let answer = parseInt(document.getElementsById('answer4').value);
-
-//         let btn = document.getElementsById('result_button1');
-//         let btn = document.getElementsById('result_button2');
-//         let btn = document.getElementsById('result_button3');
-//         let btn = document.getElementsById('result_button4');
-
-//         let adition = num1 + num2;
-//         let subtraction = num3 - num4;
-//         let miltiplication = num5 * num6;
-//         let divition = num7 / num8;
-
-        
-        
-//         if (adition,subtraction,miltiplication,divition === answer1, answer2, answer3, answer4){
-//             document.getElementsById('result1').innerHTML = 'You are correct';
-//             document.getElementsById('result2').innerHTML = 'You are correct';
-//             document.getElementsById('result3').innerHTML = 'You are correct';
-//             document.getElementsById('result4').innerHTML = 'You are correct';
-
-//         } else {
-//             document.getElementsById('result1').innerHTML = 'You are wrong, work harder. Correct answer is ' + adition;
-//             document.getElementsById('result2').innerHTML = 'You are wrong, work harder. Correct answer is ' + subtraction;
-//             document.getElementsById('result3').innerHTML = 'You are wrong, work harder. Correct answer is ' + miltiplication;
-//             document.getElementsById('result4').innerHTML = 'You are wrong, work harder. Correct answer is ' + divition;
-// c
-//         }
-//     }
-
-
-
-
-
-
-
-        // let num1 = parseInt(prompt('What is first number?'));
-        // let num2 = parseInt(prompt('What is second number?'));
-        // let culc = prompt('How to culclate? Please type + or - or * or /');
-        // let answer = parseInt(prompt('What is answer?'));
-
-        // switch (culc) {
-        //     case '+':
-        //     let adition = num1 + num2
-
-        //     if (adition === answer) {
-        //         document.getElementById('formula').innerHTML = num1 + ' + ' + num2 + ' = ' + adition;
-        //         document.getElementById('answer').innerHTML = 'You are correct';
-        //     } else {
-        //         document.getElementById('answer').innerHTML = 'You are wrong, work harder.';
-        //     }
-
-        //     // if (num1,num2 !== )
-        //     break;
-
-        //     case '-':
-        //     let subtraction = num1 - num2
-
-        //     if (subtraction === answer) {
-        //         document.getElementById('formula').innerHTML = num1 + ' - ' + num2 + ' = ' + subtraction;
-        //         document.getElementById('answer').innerHTML = 'You are correct';
-        //     } else {
-        //         document.getElementById('answer').innerHTML = 'You are wrong, work harder.';
-        //     }
-        //     break;
-
-        //     case '*':
-        //     let miltiplication = num1 * num2
-
-        //     if (miltiplication === answer) {
-        //         document.getElementById('formula').innerHTML = num1 + ' × ' + num2 + ' = ' + miltiplication;
-        //         document.getElementById('answer').innerHTML = 'You are correct';
-        //     } else {
-        //         document.getElementById('answer').innerHTML = 'You are wrong, work harder.';
-        //     }
-        //     break;
-
-        //     case '/':
-        //     let divition = num1 / num2
-
-        //     if (divition === answer) {
-        //         document.getElementById('formula').innerHTML = num1 + ' ÷ ' + num2 + ' = ' + divition;
-        //         document.getElementById('answer').innerHTML = 'You are correct';
-        //     } else {
-        //         document.getElementById('answer').innerHTML = 'You are wrong, work harder.';
-        //     }
-        //     break;
-
-
-            
-        // }
 
     
     </script>

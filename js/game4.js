@@ -22,3 +22,8 @@ function lottery(numA) {
         }
     }
 }
+
+function restart(){
+    array = [];
+    document.getElementById("result").innerHTML = "Restart! And Reward is..."
+}
