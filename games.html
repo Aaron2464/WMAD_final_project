@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Sigmar+One&display=swap" rel="stylesheet">
+    <title>Games</title>
+    <script src="js/game4.js"></script>
+</head>
+
+<body>
+    <h2 id="games"></h2>
+    <script>
+        var games = document.getElementById('games');
+        games.innerHTML = "Hello " + sessionStorage.getItem("username") + "! You can play any game you want!";
+    </script>
+    <nav>
+        <a href="game2.html" class="toy-button" onclick="PrimNumbers">Prime Numbers</a>
+        <a href="game3.html" class="toy-button" onclick="Calculator">Calculator</a>
+        <a href="game4.html" class="toy-button" onclick="Lottery">Lottery</a>
+    </nav>
+</body>
+
+</html>
