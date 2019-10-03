@@ -87,7 +87,7 @@ p {
 .num_restart {
     width: 70px;
     height: 45px;
-    font-size:20px;
+    font-size:15px;
 }
 
 .btn_disabled {
@@ -127,7 +127,7 @@ input {
   margin-bottom: 10px;
 }
 
-#result_button1,#result_button2,#result_button3,#result_button4 {
+#result_button1,#result_button2,#result_button3,#result_button4, .num_restart {
   margin-left: 10px;
   background-color: #6b6b6b;
   color: #fff;
