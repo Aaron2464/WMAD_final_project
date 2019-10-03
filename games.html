@@ -12,20 +12,16 @@
 </head>
 
 <body>
-
+    <h2 id="games"></h2>
+    <script>
+        var games = document.getElementById('games');
+        games.innerHTML = "Hello " + sessionStorage.getItem("username") + "! You can play any game you want!";
+    </script>
     <nav>
         <a href="game2.html" class="toy-button" onclick="PrimNumbers">Prime Numbers</a>
         <a href="game3.html" class="toy-button" onclick="Calculator">Calculator</a>
         <a href="game4.html" class="toy-button" onclick="Lottery">Lottery</a>
     </nav>
-
-    <h id="games"></h1>
-
-    <script>
-        var games = document.getElementById('games');
-        games.innerHTML = "Hello " + sessionStorage.getItem("username") + "! You can play any game you want!";
-        
-    </script>
 </body>
 
 </html>

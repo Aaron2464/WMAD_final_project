@@ -20,6 +20,16 @@ html {
     margin-top: 60px;
 }
 
+.bottunPicture{
+    position:fixed;
+    right:50px;
+    bottom:50px;
+}
+
+.bottunPicture:hover{
+    opacity:0.4;
+}
+
 h1 {
     font-size: 6em;
     color: gray;
@@ -28,15 +38,16 @@ h1 {
 }
 
 h2 {
+    font-size: 2.5em;
     color: gray;
     font-family: 'Sigmar One', cursive;
     line-height: 0.7;
 }
 
 h3 {
-    line-height: 5px;
     color:gray;
     font-family: 'Sigmar One', cursive;
+    line-height: 5px;
 }
 
 p {
@@ -45,6 +56,9 @@ p {
     font-family: 'Sigmar One', cursive;
 }
 
+#games{
+    line-height: 90px;
+}
 
 .toy-button {
     position: relative;
@@ -56,7 +70,7 @@ p {
     border-radius: 4px;
     font-weight: bold;
     text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
-  }
+}
   
 .toy-button:active {
     border-bottom: solid 2px #17a99f;
