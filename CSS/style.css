@@ -78,7 +78,6 @@ p {
     text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-<<<<<<< HEAD
 .calc_box p {
    font-size: 25px;
    line-height: 1px;
@@ -87,10 +86,8 @@ p {
    font-weight: bold;
    width: 50px;
 }
-   .num_box {
-=======
 .num_box {
->>>>>>> 8a2256bef0002893159c07d908c0221ce1ffa377
+
     width: 45px;
     height: 45px;
     font-size:30px;
@@ -159,3 +156,46 @@ input {
   font-weight: bold;
   width: 50px;
 }
+
+input {
+    width: 200px;
+    height: 20px;
+    font-size:15px;
+ }
+ 
+ .btn_disabled {
+    background-color: #bbbbbb;
+    color:#969696;
+ }
+ 
+ .btn_active {
+    background-color:red;
+    color:#969696;
+ } 
+ 
+ 
+ .calculator{
+    display: flex; 
+    vertical-align: middle;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+ 
+ #result_button1,#result_button2,#result_button3,#result_button4 {
+    margin-left: 10px;
+    background-color: #6b6b6b;
+    color: #fff;
+ }
+ 
+ .calculator>h3 {
+    position: fixed;
+    vertical-align: left;
+    width: 23%;
+ }
+ 
+ .calc_box {
+    display: flex;
+    padding-left: 250px;
+    vertical-align: right; 
+ }
