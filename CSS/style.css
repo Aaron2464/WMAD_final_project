@@ -97,9 +97,9 @@ p {
 }
 
 input {
-  width: 45px;
-  height: 45px;
-  font-size:30px;
+  width: 200px;
+  height: 20px;
+  font-size:15px;
 }
 
 .btn_disabled {
