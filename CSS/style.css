@@ -78,6 +78,17 @@ p {
     text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+.num_box {
+    width: 45px;
+    height: 45px;
+    font-size:30px;
+}
+
+.btn_disabled {
+    background-color: #bbbbbb;
+    color:#969696;
+}
+
 #num{
     width: 70px;
     height: 70px;
