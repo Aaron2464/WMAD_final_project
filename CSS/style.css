@@ -78,7 +78,7 @@ p {
     text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-  .num_box {
+.num_box {
     width: 45px;
     height: 45px;
     font-size:30px;
@@ -110,7 +110,6 @@ input {
 .btn_active {
   background-color:red;
   color:#969696;
->>>>>>> 62d934bd93d47bf47c919ed78d477499fd474658:CSS/style.css
 } 
 
 
