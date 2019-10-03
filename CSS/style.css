@@ -78,7 +78,16 @@ p {
     text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+.calc_box p {
+   font-size: 25px;
+   line-height: 1px;
+   color: gray;
+   font-family: 'Helvetica';
+   font-weight: bold;
+   width: 50px;
+}
 .num_box {
+
     width: 45px;
     height: 45px;
     font-size:30px;
@@ -127,10 +136,14 @@ input {
   margin-bottom: 10px;
 }
 
-#result_button1,#result_button2,#result_button3,#result_button4, .num_restart {
+.num_restart {
   margin-left: 10px;
-  background-color: #6b6b6b;
-  color: #fff;
+  background-color: #17a99f;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  color: #17a99f;
+  box-shadow:4px 4px gray;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .calculator>h3 {
@@ -153,3 +166,50 @@ input {
   font-weight: bold;
   width: 50px;
 }
+
+input {
+    width: 200px;
+    height: 20px;
+    font-size:15px;
+ }
+ 
+ .btn_disabled {
+    background-color: #bbbbbb;
+    color:#969696;
+ }
+ 
+ .btn_active {
+    background-color:red;
+    color:#969696;
+ } 
+ 
+ 
+ .calculator{
+    display: flex; 
+    vertical-align: middle;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+ 
+ #result_button1,#result_button2,#result_button3,#result_button4 {
+    margin-left: 10px;
+  background-color: #17a99f;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  color: #FFF;
+  box-shadow:4px 4px gray;
+  border-radius: 4px;
+  font-weight: bold;
+ }
+ 
+ .calculator>h3 {
+    position: fixed;
+    vertical-align: left;
+    width: 23%;
+ }
+ 
+ .calc_box {
+    display: flex;
+    padding-left: 250px;
+    vertical-align: right; 
+ }
